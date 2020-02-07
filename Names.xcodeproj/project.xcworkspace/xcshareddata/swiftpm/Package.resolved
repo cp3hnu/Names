@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Bricking",
+        "repositoryURL": "https://github.com/cp3hnu/Bricking.git",
+        "state": {
+          "branch": null,
+          "revision": "67e2c3df6172b16a7d4b110c6e7d1b857a457fd8",
+          "version": "3.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
