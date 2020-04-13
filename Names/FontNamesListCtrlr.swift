@@ -15,10 +15,8 @@ final class FontNamesListCtrlr: UIViewController {
     private let tableView = UITableView()
     private let familyNames: [String]
     private let fontsNames: [[String]]
-    private let api: API
     
-    init(api: API) {
-        self.api = api
+    init() {
         familyNames = UIFont.familyNames.sorted()
         var names = [[String]]()
         for familyName in familyNames {

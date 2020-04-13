@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		35530ACD23EDA13400BADAAC /* FontNamesListCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35530ACC23EDA13400BADAAC /* FontNamesListCtrlr.swift */; };
+		358BD8332440A36C00EC250A /* VoiceListCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BD8302440A36C00EC250A /* VoiceListCtrlr.swift */; };
+		358BD8342440A36C00EC250A /* VoiceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BD8312440A36C00EC250A /* VoiceTableCell.swift */; };
+		358BD8352440A36C00EC250A /* VoiceDetailCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358BD8322440A36C00EC250A /* VoiceDetailCtrlr.swift */; };
 		35CE0280238E593200371B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE027F238E593200371B41 /* AppDelegate.swift */; };
 		35CE0289238E593700371B41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CE0288238E593700371B41 /* Assets.xcassets */; };
 		35CE028C238E593700371B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CE028A238E593700371B41 /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		35530ACC23EDA13400BADAAC /* FontNamesListCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontNamesListCtrlr.swift; sourceTree = "<group>"; };
+		358BD8302440A36C00EC250A /* VoiceListCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceListCtrlr.swift; sourceTree = "<group>"; };
+		358BD8312440A36C00EC250A /* VoiceTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceTableCell.swift; sourceTree = "<group>"; };
+		358BD8322440A36C00EC250A /* VoiceDetailCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceDetailCtrlr.swift; sourceTree = "<group>"; };
 		35CE027C238E593100371B41 /* Names.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Names.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE027F238E593200371B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CE0288238E593700371B41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +47,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358BD8362440A37000EC250A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				35530ACC23EDA13400BADAAC /* FontNamesListCtrlr.swift */,
+				35CE029C238E634500371B41 /* FontDisplayCtrlr.swift */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		358BD8372440A39A00EC250A /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				358BD8322440A36C00EC250A /* VoiceDetailCtrlr.swift */,
+				358BD8302440A36C00EC250A /* VoiceListCtrlr.swift */,
+				358BD8312440A36C00EC250A /* VoiceTableCell.swift */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
 		35CE0273238E593100371B41 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +88,8 @@
 				35CE0298238E5B4C00371B41 /* API.swift */,
 				35CE027F238E593200371B41 /* AppDelegate.swift */,
 				35CE0296238E5AE800371B41 /* APIListCtrlr.swift */,
-				35530ACC23EDA13400BADAAC /* FontNamesListCtrlr.swift */,
-				35CE029C238E634500371B41 /* FontDisplayCtrlr.swift */,
+				358BD8362440A37000EC250A /* Font */,
+				358BD8372440A39A00EC250A /* Voice */,
 				35CE0288238E593700371B41 /* Assets.xcassets */,
 				35CE028A238E593700371B41 /* LaunchScreen.storyboard */,
 				35CE028D238E593700371B41 /* Info.plist */,
@@ -148,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358BD8332440A36C00EC250A /* VoiceListCtrlr.swift in Sources */,
 				35CE0297238E5AE800371B41 /* APIListCtrlr.swift in Sources */,
 				35CE0299238E5B4C00371B41 /* API.swift in Sources */,
 				35530ACD23EDA13400BADAAC /* FontNamesListCtrlr.swift in Sources */,
 				35CE029D238E634500371B41 /* FontDisplayCtrlr.swift in Sources */,
+				358BD8342440A36C00EC250A /* VoiceTableCell.swift in Sources */,
+				358BD8352440A36C00EC250A /* VoiceDetailCtrlr.swift in Sources */,
 				35CE0280238E593200371B41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +379,7 @@
 			repositoryURL = "https://github.com/cp3hnu/Bricking.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.1;
+				minimumVersion = 4.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

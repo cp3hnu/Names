@@ -53,6 +53,7 @@ extension APIListCtrlr: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath)
         let item = API.allCases[indexPath.item]
         cell.textLabel?.text = item.description
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
         return cell
     }
     
@@ -60,7 +61,15 @@ extension APIListCtrlr: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let item = API.allCases[indexPath.item]
-        let ctrlr = FontNamesListCtrlr(api: item)
-        self.navigationController?.pushViewController(ctrlr, animated: true)
+        switch item {
+        case API.font:
+            let ctrlr = FontNamesListCtrlr()
+            self.navigationController?.pushViewController(ctrlr, animated: true)
+        case API.voice:
+            let ctrlr = VoiceListCtrlr()
+            self.navigationController?.pushViewController(ctrlr, animated: true)
+        default:
+            break
+        }
     }
 }

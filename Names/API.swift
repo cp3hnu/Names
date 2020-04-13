@@ -10,11 +10,14 @@ import Foundation
 
 enum API: CaseIterable, CustomStringConvertible {
     case font
+    case voice
     
     var description: String {
         switch self {
         case .font:
             return "UIFont.familyNames"
+        case .voice:
+            return "AVSpeechSynthesisVoice.speechVoices"
         }
     }
 }
